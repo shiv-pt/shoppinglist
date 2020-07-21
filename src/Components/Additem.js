@@ -35,7 +35,7 @@ class Additem extends Component {
                     <input id="qtn" type="text" onChange={this.handleChange}></input>                                  
                 </div>
                 <div className="input-field">
-                    <button type="submit" className="btn pink lighten-1">Add</button>
+                    <button type="submit" className="btn green lighten-1">Add</button>
                 </div>
                 </form>
         </div>
@@ -45,7 +45,7 @@ class Additem extends Component {
 
 const mapStateToProps = (state) => {
     return{
-        items: state.items
+        items: state.item.items
     }
 }
 

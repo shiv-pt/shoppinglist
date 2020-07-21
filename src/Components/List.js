@@ -20,10 +20,11 @@ class List extends Component {
                   <div className="post card" key={item.id}>
                     <div className="card-content">
                       <Link to={'/' + item.id}>
-                        <span className="card-title red-text">Item: {item.material}</span>
+                        <span className="card-title green-text">Item: {item.material}</span>
                       </Link>
                       <p>Quantity: {item.qtn}</p>
-                      <button onClick = {(key) => this.handleClick(item.id)}>Delete Item</button>
+                      <br />
+                      <button className="m-5" onClick = {(key) => this.handleClick(item.id)}>Delete Item</button>
                     </div>
                   </div>
                 )
@@ -50,7 +51,7 @@ class List extends Component {
 
 const mapStateToProps = (state) => {
   return{
-    item: state.items
+    item: state.item.items
   }
 }
 
