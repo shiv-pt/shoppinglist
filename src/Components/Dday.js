@@ -16,7 +16,7 @@ class Day extends Component {
         var d1= date1.getDate();
         var m1 = date1.getMonth();
         var y1 = date1.getFullYear();
-        var x = (d1 -d) + ((m1 -m)*30) + (y1-y)*365
+        var x = (d1 + m1*30 + y1*365) - (d + m*30 + y*365)
         this.setState ({
             left: [x]
         })

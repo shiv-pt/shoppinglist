@@ -20,7 +20,6 @@ const storeReducer = (state = initstate, action) => {
         let newStores = state.items.filter(store => {
             return action.id !== store.id 
        })
-       console.log('newStores',newStores)
         return {
             stores: newStores
         }
